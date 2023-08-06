@@ -1,4 +1,4 @@
-## EMSurv: End-to-end Multi-model Brain Tumor Survival Prediction with Population InformationIntegration via Pseudo-labeling
+## MPSurv: End-to-end Multi-model Pseudo-label Model for Brain Tumor Survival Prediction with Population Information Integration
 
 We used the https://github.com/lescientifik/open_brats2020 project as a framework to write our code
 
