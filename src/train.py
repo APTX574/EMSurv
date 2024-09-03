@@ -314,12 +314,8 @@ def main(args):
 
             # do_epoch for one epoch
             ts = time.perf_counter()
-            # if epoch<2:
-            #     model,weight= freeze_model(model,type_freeze="suf")
             if epoch> 350:
                 model,weight= freeze_model(model,type_freeze="seg")
-            # if epoch==14:
-                # model,weight= freeze_model(model,type_freeze="no")
             weight=torch.Tensor([0.01,2e-7,1]).cuda().float()
             if epoch>100:
                 weight=torch.Tensor([0.001,5e-7,1]).cuda().float()
