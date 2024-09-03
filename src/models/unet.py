@@ -16,7 +16,7 @@ class Unet(nn.Module):
                  **kwargs):
         super(Unet, self).__init__()
         features = [width * 2 ** i for i in range(4)]
-        print("特征的通道维度列表，width是初始的通道维度，之后每下采样一次，扩大一倍" + str(features))
+
 
         self.deep_supervision = deep_supervision
 
