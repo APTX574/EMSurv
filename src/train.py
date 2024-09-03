@@ -58,10 +58,6 @@ parser.add_argument('--wd', '--weight-decay', default=0., type=float,
                     dest='weight_decay')
 # Warning: untested option!!
 # 从ckp点恢复训练，参数为model_best.pth.tar的位置
-# parser.add_argument('--resume', default='/mntcephfs/lab_data/wangcm/wqs/brats/open_brats2020/runs/20230629_013756__fold0_Unet_48_batch6_optimranger_ranger_lr0.0005-wd0.0_epochs520_deepsupFalse_fp16_warm0__normgroup_dropout0.0_warm_restartFalse/model_best.pth.tar', type=str, metavar='PATH',
-#                     help='path to latest checkpoint. Warning: untested option')
-# parser.add_argument('--resume', default='/mntcephfs/lab_data/wangcm/wqs/brats/open_brats2020/runs/20230706_200511/model_best_acc.pth.tar', type=str, metavar='PATH',
-# parser.add_argument('--resume', default='/mntcephfs/lab_data/wangcm/wqs/brats/open_brats2020/runs/model_resumer.pth.tar', type=str, metavar='PATH',
 parser.add_argument('--resume', default='', type=str, metavar='PATH',
                     help='path to latest checkpoint. Warning: untested option')
 
